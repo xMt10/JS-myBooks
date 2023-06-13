@@ -117,7 +117,7 @@ const listBasketItems = () => {
   let basketListHtml = "";
   let totalPrice = 0;
   basketList.forEach((item) => {
-    totalPrice += item.product.price;
+    totalPrice += item.product.price * item.quantity;
     basketListHtml += `
     <li class="basket-item">
     <img

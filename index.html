@@ -19,9 +19,9 @@
       <ul class="menu-icons">
         <li><i class="bi bi-person"></i></li>
         <li><i class="bi bi-search"></i></li>
-        <li class="basket-icon">
+        <li class="basket-icon" onclick="toggleModal()">
           <i class="bi bi-bag"></i>
-          <span class="basket-count">2</span>
+          <span class="basket-count"></span>
         </li>
       </ul>
     </nav>
@@ -96,209 +96,21 @@
     <section class="store my-4">
       <div class="filter-background"></div>
       <ul class="filter">
-        <li class="active">Tümü</li>
-        <li>Roman</li>
-        <li>Roman</li>
-        <li>Roman</li>
       </ul>
-      <div class="row">
-        <div class="col-5 offset-2 my-5">
-          <div class="row book-card">
-            <div class="col-6">
-              <img
-                class="img-fluid shadow"
-                src="./assets/images/books/nutuk.jpg"
-                width="258"
-                height="400"
-              />
-            </div>
-            <div class="col-6 d-flex flex-column justify-content-between">
-              <div class="book-detail">
-                <span class="fos gray fs-5">Mustafa Kemal</span>
-                <span class="fs-4 fw-bold">Nutuk</span> <br />
-                <span class="book-star-rate">
-                  <i class="bi bi-star-fill active"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <span class="book-reviews">250 reviews</span>
-                </span>
-              </div>
-              <p class="book-description fos gray">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
-                repellendus voluptatem odit natus quas rerum inventore velit
-                exercitationem non rem sapiente, maiores eveniet ad consectetur
-                deserunt maxime accusantium aut beatae assumenda architecto!
-                Fugit doloremque ut architecto repellat voluptate velit
-                consectetur beatae ea quaerat hic. Sed eum consequatur nihil
-                expedita doloremque!
-              </p>
-              <div>
-                <span class="black fw-bold fs-5 me-1">₺45</span>
-                <span class="gray fw-bold text-decoration-line-through"
-                  >₺65</span
-                >
-              </div>
-              <button class="btn-purple">ADD BASKET</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-5 my-4">
-          <div class="row book-card">
-            <div class="col-6">
-              <img
-                class="img-fluid shadow"
-                src="./assets/images/books/nutuk.jpg"
-                width="258"
-                height="400"
-              />
-            </div>
-            <div class="col-6 d-flex flex-column justify-content-between">
-              <div class="book-detail">
-                <span class="fos gray fs-5">Mustafa Kemal</span>
-                <span class="fs-4 fw-bold">Nutuk</span> <br />
-                <span class="book-star-rate">
-                  <i class="bi bi-star-fill active"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <span class="book-reviews">250 reviews</span>
-                </span>
-              </div>
-              <p class="book-description fos gray">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
-                repellendus voluptatem odit natus quas rerum inventore velit
-                exercitationem non rem sapiente, maiores eveniet ad consectetur
-                deserunt maxime accusantium aut beatae assumenda architecto!
-                Fugit doloremque ut architecto repellat voluptate velit
-                consectetur beatae ea quaerat hic. Sed eum consequatur nihil
-                expedita doloremque!
-              </p>
-              <div>
-                <span class="black fw-bold fs-5 me-1">₺45</span>
-                <span class="gray fw-bold text-decoration-line-through"
-                  >₺65</span
-                >
-              </div>
-              <button class="btn-purple">ADD BASKET</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-5 offset-2 my-4">
-          <div class="row book-card">
-            <div class="col-6">
-              <img
-                class="img-fluid shadow"
-                src="./assets/images/books/nutuk.jpg"
-                width="258"
-                height="400"
-              />
-            </div>
-            <div class="col-6 d-flex flex-column justify-content-between">
-              <div class="book-detail">
-                <span class="fos gray fs-5">Mustafa Kemal</span>
-                <span class="fs-4 fw-bold">Nutuk</span> <br />
-                <span class="book-star-rate">
-                  <i class="bi bi-star-fill active"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <span class="book-reviews">250 reviews</span>
-                </span>
-              </div>
-              <p class="book-description fos gray">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
-                repellendus voluptatem odit natus quas rerum inventore velit
-                exercitationem non rem sapiente, maiores eveniet ad consectetur
-                deserunt maxime accusantium aut beatae assumenda architecto!
-                Fugit doloremque ut architecto repellat voluptate velit
-                consectetur beatae ea quaerat hic. Sed eum consequatur nihil
-                expedita doloremque!
-              </p>
-              <div>
-                <span class="black fw-bold fs-5 me-1">₺45</span>
-                <span class="gray fw-bold text-decoration-line-through"
-                  >₺65</span
-                >
-              </div>
-              <button class="btn-purple">ADD BASKET</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-5 my-4">
-          <div class="row book-card">
-            <div class="col-6">
-              <img
-                class="img-fluid shadow"
-                src="./assets/images/books/nutuk.jpg"
-                width="258"
-                height="400"
-              />
-            </div>
-            <div class="col-6 d-flex flex-column justify-content-between">
-              <div class="book-detail">
-                <span class="fos gray fs-5">Mustafa Kemal</span>
-                <span class="fs-4 fw-bold">Nutuk</span> <br />
-                <span class="book-star-rate">
-                  <i class="bi bi-star-fill active"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <span class="book-reviews">250 reviews</span>
-                </span>
-              </div>
-              <p class="book-description fos gray">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
-                repellendus voluptatem odit natus quas rerum inventore velit
-                exercitationem non rem sapiente, maiores eveniet ad consectetur
-                deserunt maxime accusantium aut beatae assumenda architecto!
-                Fugit doloremque ut architecto repellat voluptate velit
-                consectetur beatae ea quaerat hic. Sed eum consequatur nihil
-                expedita doloremque!
-              </p>
-              <div>
-                <span class="black fw-bold fs-5 me-1">₺45</span>
-                <span class="gray fw-bold text-decoration-line-through"
-                  >₺65</span
-                >
-              </div>
-              <button class="btn-purple">ADD BASKET</button>
-            </div>
-          </div>
-        </div>
+      <div class="row book-list">
+    
       </div>
     </section>
 
     <div class="basket-modal">
       <div class="basket-items">
-        <i class="bi bi-x"></i>
+        <i class="bi bi-x" onclick = "toggleModal()" "></i>
         <h2 class="basket-title">Your Items</h2>
         <ul class="basket-list">
-          <li class="basket-item">
-            <img
-              src="./assets/images/books/nutuk.jpg"
-              width="100"
-              height="100"
-              alt=""
-            />
-            <div class="basket-item-info">
-              <h3 class="book-name">Nutuk</h3>
-              <span class="book-price">₺45</span><br />
-              <span class="book-remove">remove</span>
-            </div>
-            <div class="book-count">
-              <span class="decrease">-</span>
-              <span>2</span>
-              <span class="increase">+</span>
-            </div>
-          </li>
+          <li class="basket-item">No items to buy again.</li>
         </ul>
         <div class="basket-total">
-          <span class="fw-bold fs-4">Total : ₺145</span>
+          <span class="fw-bold fs-4 total-price"></span>
           <button class="btn-purple">CHECKOUT</button>
         </div>
       </div>
@@ -308,6 +120,7 @@
       type="text/javascript"
       src="assets/bootstrap/js/bootstrap.min.js"
     ></script>
+    <script src="assets/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
   </body>
 </html>
